@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dashboard {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, 50%);
+}
+
+.profile {
+    border-radius: 10px;
+}
+
+ #main {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    padding: 2rem 7rem 2rem 1rem;
+    z-index: 9999;
+    position: relative;
+    z-index: 10;
+
+}
+
+#main img {
+    width: 5rem;
+    border: 3px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+#main h1 {
+    margin-top: -20px;
+    font-weight: 300;
+    font-size: 32px;
+    width: 1rem;
+}
+
+h5 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#period {
+    background-color:  hsl(235, 46%, 20%);
+    margin-top: -30px;
+    padding: 2.5rem 7rem .5rem 1rem;
+    border-radius: 10px;
+    color: hsl(236, 100%, 87%);
+}
+
+#period h3 {
+    transition: ease-in-out .12s;
+}
+
+#period h3:hover{
+    cursor: pointer;
+    color:#fff;
+}
+
+main {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 2em 2em; 
+    grid-template-areas: 
+      "work play study"
+      "exercise social self-care"; 
+      margin-left: 2rem;
+}
+
+main h1 {
+    font-weight: 300;
+    font-size: 36px;
+    margin: -5px 0 -10px 0;
+ 
+}
+
+main h5 {
+    margin: 15px 0 -5px 0;
+    color: hsl(236, 100%, 87%);
+}
+
+main img {
+    object-position: 0 -2px;
+}
+
+.stats {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;;
+    margin-top: -25px;
+    padding: 1rem 4rem 1.5rem 1rem;
+    position: relative;
+    z-index: 99999999;
+    transition: ease-in-out .2s;
+}
+
+.stats:hover {
+    background-color:  hsl(235, 40%, 30%);
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -10px -3rem 0 0;
+}
+
+i {
+    margin-bottom: 5px;
+}
+
+.title i:hover {
+    cursor: pointer;
+}
+
+.work { grid-area: work; }
+
+#work-header {
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: right;
+    padding: 0 .5rem;
+}
+
+
+
+
+.play { grid-area: play; }
+
+#play-header {
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: right;
+    padding: 0 .5rem;
+}
+
+.study { grid-area: study; }
+
+#study-header {
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: right;
+    padding: 0 .5rem;
+}
+
+.exercise { grid-area: exercise; }
+
+#exercise-header {
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: right;
+    padding: 0 .5rem;
+}
+
+.social { grid-area: social; }
+
+#social-header{
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: right;
+    padding: 0 .5rem;
+}
+
+.self-care { grid-area: self-care; }
+
+#selfcare-header {
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: right;
+    padding: 0 .5rem;
+}
